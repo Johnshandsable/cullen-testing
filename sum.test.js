@@ -1,4 +1,3 @@
-const { TestScheduler } = require('@jest/core');
 const sum = require('./sum.js');
 
 test('should add two numbers together, and return the sum', () => {
@@ -23,7 +22,7 @@ test('should fail if I give it only one argument', () => {
   //
   expect(() => {
     sum(-3);
-  }).toThrow('Dont forget second argument!');
+  }).toThrow('Dont forget a second argument!');
 });
 
 test('should convert number strings to numbers ', () => {
